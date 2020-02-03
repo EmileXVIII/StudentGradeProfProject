@@ -6,10 +6,7 @@ import feign.gson.GsonDecoder;
 import feign.gson.GsonEncoder;
 import feign.okhttp.OkHttpClient;
 import feign.slf4j.Slf4jLogger;
-import fr.emile.mainAPI.clients.IStudentClient;
-import fr.emile.mainAPI.clients.IGradeClient;
-import fr.emile.mainAPI.clients.IGradeStudentsClient;
-import fr.emile.mainAPI.clients.ITeacherClient;
+import fr.emile.mainAPI.clients.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -53,6 +50,15 @@ public class MainService {
             .target(IGradeStudentsClient.class, "http://localhost:8084/gradeStudents")
             ;
 
+    private IGradeTeachersClient iGradeTeachersClient = Feign.builder()
+            .client(new OkHttpClient())
+            .encoder(new GsonEncoder())
+            .decoder(new GsonDecoder())
+            .logger(new Slf4jLogger())
+            .logLevel(Logger.Level.FULL)
+            .target(IGradeTeachersClient.class, "http://localhost:8085/gradeTeachers")
+            ;
+
     public IStudentClient getiStudentClient() {
         return iStudentClient;
     }
@@ -67,6 +73,10 @@ public class MainService {
 
     public IGradeStudentsClient getiGradeStudentsClient() {
         return iGradeStudentsClient;
+    }
+
+    public IGradeTeachersClient getiGradeTeachersClient() {
+        return iGradeTeachersClient;
     }
 
 }

@@ -38,23 +38,25 @@ public class GradeTeachersService {
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger())
             .logLevel(Logger.Level.FULL)
-            .target(ITeacherClient.class, "http://localhost:8081/teachers")
+            .target(ITeacherClient.class, "http://localhost:8083/teachers")
             ;
 
     public GradeTeachersDTO getGradeById(Long gradeId){
 
         log.info("Call to the grade client - getOneById : " + gradeId);
         Grade grade;
+        Long teacherId;
         try {
             grade= iGradeClient.getOneById(gradeId);
+            teacherId = grade.getTeacherId();
         } catch (Exception e) {
             return null;
         }
         log.warn(grade.toString());
 
-        log.info("Call to the teacher client - getAll");
+        log.info("Call to the teachers client - getAll");
         List<Teacher> userGrades = iTeacherClient.getAll().stream()
-                .filter(s -> s.getGrade().equals(gradeId)).collect(Collectors.toList());
+                .filter(s -> s.getId().equals(teacherId)).collect(Collectors.toList());
         return new GradeTeachersDTO(grade, userGrades);
     }
 }

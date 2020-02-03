@@ -18,9 +18,14 @@ public class MainController {
     @Autowired
     MainService mainService;
 
-    @GetMapping("/gradeStudents/{userId}")
-    public ResponseEntity<Object> getGradeStudents(@PathVariable Long userId){
-        return new ResponseEntity<>(mainService.getiGradeStudentsClient().getGradeStudents(userId), HttpStatus.OK);
+    @GetMapping("/gradeStudents/{studentId}")
+    public ResponseEntity<Object> getGradeStudents(@PathVariable Long studentId){
+        return new ResponseEntity<>(mainService.getiGradeStudentsClient().getGradeStudents(studentId), HttpStatus.OK);
+    }
+
+    @GetMapping("/gradeTeachers/{teacherId}")
+    public ResponseEntity<Object> getGradeTeachers(@PathVariable Long teacherId){
+        return new ResponseEntity<>(mainService.getiGradeTeachersClient().getGradeTeachers(teacherId), HttpStatus.OK);
     }
 //grades
     @GetMapping("/grades/{id}")

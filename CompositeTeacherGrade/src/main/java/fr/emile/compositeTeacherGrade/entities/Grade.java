@@ -8,6 +8,6 @@ import lombok.Setter;
 public class Grade {
     private Long id;
     private String title;
-    private String teacherId;
+    private Long teacherId;
     private Long year;
 }

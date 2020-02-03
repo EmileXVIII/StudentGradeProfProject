@@ -40,7 +40,7 @@ public class GradeStudentsService {
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger())
             .logLevel(Logger.Level.FULL)
-            .target(IStudentClient.class, "http://localhost:8080/students")
+            .target(IStudentClient.class, "http://localhost:8081/students")
             ;
 
     public GradeStudentsDTO getGradeById(Long gradeId){

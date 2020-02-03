@@ -7,7 +7,6 @@ import lombok.Setter;
 @Setter
 public class Teacher {
     private Long id;
-    private Long grade;
     private String firstname;
     private String lastname;
     private String birthdate;

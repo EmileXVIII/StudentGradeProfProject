@@ -15,7 +15,7 @@ public class GradeTeachersController {
     GradeTeachersService gradeTeachersService;
 
     @RequestMapping("/gradeTeachers/{gradeId}")
-    public ResponseEntity<GradeTeachersDTO> getGradeStudents(@PathVariable Long gradeId){
+    public ResponseEntity<GradeTeachersDTO> getGradeTeachers(@PathVariable Long gradeId){
         GradeTeachersDTO result = gradeTeachersService.getGradeById(gradeId);
         if (result==null) return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
         return new ResponseEntity<>(result, HttpStatus.OK);
