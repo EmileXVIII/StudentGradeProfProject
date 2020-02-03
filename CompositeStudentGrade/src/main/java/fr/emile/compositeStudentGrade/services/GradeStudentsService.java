@@ -14,6 +14,8 @@ import fr.emile.compositeStudentGrade.entities.GradeStudentsDTO;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -44,7 +46,13 @@ public class GradeStudentsService {
     public GradeStudentsDTO getGradeById(Long gradeId){
 
         log.info("Call to the grade client - getOneById : " + gradeId);
-        Grade grade= iGradeClient.getOneById(gradeId);
+        Grade grade;
+        try {
+            grade= iGradeClient.getOneById(gradeId);
+        } catch (Exception e) {
+            return null;
+        }
+        log.warn(grade.toString());
 
         log.info("Call to the students client - getAll");
         List<Student> userGrades = iStudentClient.getAll().stream()
