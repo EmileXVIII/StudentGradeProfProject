@@ -17,7 +17,7 @@ import java.util.Date;
 @Data
 @Entity
 @DynamicUpdate
-@Table(name = "Todo")
+@Table(name = "Student")
 @EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties(value = {"createdAt", "updatedAt"},
         allowGetters = true)
