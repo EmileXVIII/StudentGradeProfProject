@@ -61,8 +61,8 @@ public class GradeControl {
                     boolean check = false;
                     String newTitle = (String) newGrade.getTitle();
                     if (newTitle!= null) {t.setTitle(newTitle);check=true;}
-                    String newHeadTeacher = (String) newGrade.getHeadTeacher();
-                    if (newHeadTeacher!= null) {t.setHeadTeacher(newHeadTeacher);check=true;}
+                    Long teacherId = (Long) newGrade.getTeacherId();
+                    if (teacherId!= null) {t.setTeacherId(teacherId);check=true;}
                     Long newYear = (Long) newGrade.getYear();
                     if (newYear!= null) {t.setYear(newYear);check=true;}
                     if(!check) throw new NothingToDoException("Nothing to update");

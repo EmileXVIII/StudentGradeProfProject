@@ -14,6 +14,6 @@ import javax.validation.constraints.NotBlank;
 public class GradeJson {
     private Long id;
     private String title;
-    private String headTeacher;
+    private Long teacherId;
     private Long year;
 }

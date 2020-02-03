@@ -31,8 +31,8 @@ public class Grade implements Serializable {
     @NotBlank
     private String title;
 
-    @NotBlank
-    private String headTeacher;
+    @NotNull
+    private Long teacherId;
 
     @NotNull
     private Long year;
