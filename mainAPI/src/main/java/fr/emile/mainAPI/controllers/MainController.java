@@ -23,9 +23,9 @@ public class MainController {
         return new ResponseEntity<>(mainService.getiGradeStudentsClient().getGradeStudents(studentId), HttpStatus.OK);
     }
 
-    @GetMapping("/gradeTeachers/{teacherId}")
-    public ResponseEntity<Object> getGradeTeachers(@PathVariable Long teacherId){
-        return new ResponseEntity<>(mainService.getiGradeTeachersClient().getGradeTeachers(teacherId), HttpStatus.OK);
+    @GetMapping("/teacherGrades/{teacherId}")
+    public ResponseEntity<Object> getTeacherGrades(@PathVariable Long teacherId){
+        return new ResponseEntity<>(mainService.getiGradeTeachersClient().getTeacherGrades(teacherId), HttpStatus.OK);
     }
 //grades
     @GetMapping("/grades/{id}")

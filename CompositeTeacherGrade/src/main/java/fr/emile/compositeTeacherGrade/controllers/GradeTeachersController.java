@@ -1,6 +1,6 @@
 package fr.emile.compositeTeacherGrade.controllers;
 
-import fr.emile.compositeTeacherGrade.entities.GradeTeachersDTO;
+import fr.emile.compositeTeacherGrade.entities.TeacherGradesDTO;
 import fr.emile.compositeTeacherGrade.services.GradeTeachersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,9 +14,9 @@ public class GradeTeachersController {
     @Autowired
     GradeTeachersService gradeTeachersService;
 
-    @RequestMapping("/gradeTeachers/{gradeId}")
-    public ResponseEntity<GradeTeachersDTO> getGradeTeachers(@PathVariable Long gradeId){
-        GradeTeachersDTO result = gradeTeachersService.getGradeById(gradeId);
+    @RequestMapping("/teacherGrades/{teacherId}")
+    public ResponseEntity<TeacherGradesDTO> getGradeTeachers(@PathVariable Long teacherId){
+        TeacherGradesDTO result = gradeTeachersService.getGradesByTeacherId(teacherId);
         if (result==null) return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

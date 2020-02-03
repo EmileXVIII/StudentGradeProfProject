@@ -9,5 +9,5 @@ import org.springframework.stereotype.Component;
 @FeignClient(name = "GradeTeachersClient")
 public interface IGradeTeachersClient {
     @RequestLine("GET /{id}") //execute l'appel
-    Object getGradeTeachers(@Param("id") Long id);
+    Object getTeacherGrades(@Param("id") Long id);
 }

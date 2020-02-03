@@ -10,7 +10,7 @@ import fr.emile.compositeTeacherGrade.clients.IGradeClient;
 import fr.emile.compositeTeacherGrade.clients.ITeacherClient;
 import fr.emile.compositeTeacherGrade.entities.Grade;
 import fr.emile.compositeTeacherGrade.entities.Teacher;
-import fr.emile.compositeTeacherGrade.entities.GradeTeachersDTO;
+import fr.emile.compositeTeacherGrade.entities.TeacherGradesDTO;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -41,22 +41,19 @@ public class GradeTeachersService {
             .target(ITeacherClient.class, "http://localhost:8083/teachers")
             ;
 
-    public GradeTeachersDTO getGradeById(Long gradeId){
+    public TeacherGradesDTO getGradesByTeacherId(Long teacherId){
 
-        log.info("Call to the grade client - getOneById : " + gradeId);
-        Grade grade;
-        Long teacherId;
+        log.info("Call to the teacher client - getOneById : " + teacherId);
+        Teacher teacher;
         try {
-            grade= iGradeClient.getOneById(gradeId);
-            teacherId = grade.getTeacherId();
+            teacher= iTeacherClient.getOneById(teacherId);
         } catch (Exception e) {
             return null;
         }
-        log.warn(grade.toString());
 
         log.info("Call to the teachers client - getAll");
-        List<Teacher> userGrades = iTeacherClient.getAll().stream()
+        List<Grade> teacherGrades = iGradeClient.getAll().stream()
                 .filter(s -> s.getId().equals(teacherId)).collect(Collectors.toList());
-        return new GradeTeachersDTO(grade, userGrades);
+        return new TeacherGradesDTO(teacher, teacherGrades);
     }
 }

@@ -56,7 +56,7 @@ public class MainService {
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger())
             .logLevel(Logger.Level.FULL)
-            .target(IGradeTeachersClient.class, "http://localhost:8085/gradeTeachers")
+            .target(IGradeTeachersClient.class, "http://localhost:8085/teacherGrades")
             ;
 
     public IStudentClient getiStudentClient() {
