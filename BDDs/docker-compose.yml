@@ -1,0 +1,42 @@
+version:  '3.7'
+
+services:
+  mariaGrade:
+    image: mariadb:10.4
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd
+    ports:
+     - 3306:3306
+
+    volumes:
+     - ./mariaGrade/mysql:/var/lib/mysql
+     - ./scripts.dir:/scripts.dir
+     - ./mariaGrade/backups:/backups
+
+
+  mariaStudent:
+    image: mariadb:10.4
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd
+    ports:
+     - 3307:3306
+
+    volumes:
+     - ./mariaStudent/mysql:/var/lib/mysql
+     - ./scripts.dir:/scripts.dir
+     - ./mariaStudent/backups:/backups
+  mariaTeacher:
+    image: mariadb:10.4
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: pwd
+    ports:
+     - 3308:3306
+
+    volumes:
+     - ./mariaTeacher/mysql:/var/lib/mysql
+     - ./scripts.dir:/scripts.dir
+     - ./mariaTeacher/backups:/backups
+
