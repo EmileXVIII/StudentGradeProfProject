@@ -10,7 +10,7 @@ import fr.emile.compositeStudentGrade.clients.IGradeClient;
 import fr.emile.compositeStudentGrade.clients.IStudentClient;
 import fr.emile.compositeStudentGrade.entities.Grade;
 import fr.emile.compositeStudentGrade.entities.Student;
-import fr.emile.compositeStudentGrade.entities.StudentGradesDTO;
+import fr.emile.compositeStudentGrade.entities.GradeStudentsDTO;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -23,14 +23,14 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @Slf4j
-public class StudentGradesService {
+public class GradeStudentsService {
     private IGradeClient iGradeClient = Feign.builder()
             .client(new OkHttpClient())
             .encoder(new GsonEncoder())
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger())
             .logLevel(Logger.Level.FULL)
-            .target(IGradeClient.class, "http://localhost:8080/grades")
+            .target(IGradeClient.class, "http://localhost:8082/grades")
             ;
     private IStudentClient iStudentClient = Feign.builder()
             .client(new OkHttpClient())
@@ -38,17 +38,17 @@ public class StudentGradesService {
             .decoder(new GsonDecoder())
             .logger(new Slf4jLogger())
             .logLevel(Logger.Level.FULL)
-            .target(IStudentClient.class, "http://localhost:8081/students")
+            .target(IStudentClient.class, "http://localhost:8080/students")
             ;
 
-    public StudentGradesDTO getStudentById(Long studentId){
+    public GradeStudentsDTO getGradeById(Long gradeId){
 
-        log.info("Call to the student client - getOneById : " + studentId);
-        Student student = iStudentClient.getOneById(studentId);
+        log.info("Call to the grade client - getOneById : " + gradeId);
+        Grade grade= iGradeClient.getOneById(gradeId);
 
-        log.info("Call to the grades client - getAll");
-        List<Grade> userGrades = iGradeClient.getAll().stream()
-                .filter(s -> s.getId().equals(studentId)).collect(Collectors.toList());
-        return new StudentGradesDTO(student, userGrades);
+        log.info("Call to the students client - getAll");
+        List<Student> userGrades = iStudentClient.getAll().stream()
+                .filter(s -> s.getGrade().equals(gradeId)).collect(Collectors.toList());
+        return new GradeStudentsDTO(grade, userGrades);
     }
 }
