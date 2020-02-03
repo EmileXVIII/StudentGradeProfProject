@@ -2,13 +2,12 @@ package fr.emile.mainAPI.clients;
 
 import feign.Param;
 import feign.RequestLine;
-import fr.emile.mainAPI.entities.GradeStudentsDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 
 @Component
-@FeignClient(name = "UserTodosClient")
+@FeignClient(name = "GradeStudentsClient")
 public interface IGradeStudentsClient {
     @RequestLine("GET /{id}") //execute l'appel
-    GradeStudentsDTO getGradeStudents(@Param("id") Long id);
+    Object getGradeStudents(@Param("id") Long id);
 }

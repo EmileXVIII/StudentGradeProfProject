@@ -2,7 +2,6 @@ package fr.emile.mainAPI.controllers;
 
 import fr.emile.mainAPI.entities.Grade;
 import fr.emile.mainAPI.entities.Student;
-import fr.emile.mainAPI.entities.GradeStudentsDTO;
 import fr.emile.mainAPI.entities.Teacher;
 import fr.emile.mainAPI.services.MainService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +19,7 @@ public class MainController {
     MainService mainService;
 
     @GetMapping("/gradeStudents/{userId}")
-    public ResponseEntity<GradeStudentsDTO> getGradeStudents(@PathVariable Long userId){
+    public ResponseEntity<Object> getGradeStudents(@PathVariable Long userId){
         return new ResponseEntity<>(mainService.getiGradeStudentsClient().getGradeStudents(userId), HttpStatus.OK);
     }
 //grades
