@@ -19,7 +19,7 @@ public class MainController {
     @Autowired
     MainService mainService;
 
-    @GetMapping("/userTodos/{userId}")
+    @GetMapping("/gradeStudents/{userId}")
     public ResponseEntity<GradeStudentsDTO> getGradeStudents(@PathVariable Long userId){
         return new ResponseEntity<>(mainService.getiGradeStudentsClient().getGradeStudents(userId), HttpStatus.OK);
     }
