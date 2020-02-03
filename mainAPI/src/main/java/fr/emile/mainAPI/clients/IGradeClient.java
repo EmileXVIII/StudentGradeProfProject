@@ -1,28 +1,26 @@
-package fr.emile.jsonplaceholderUsertodos.clients;
+package fr.emile.mainAPI.clients;
 
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
-import fr.emile.jsonplaceholderUsertodos.entities.ToDo;
-import fr.emile.jsonplaceholderUsertodos.entities.User;
+import fr.emile.mainAPI.entities.Grade;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
 
 @Component
-@FeignClient(name = "TodoClient")
-public interface ITodoClient {
-    @RequestLine("GET /") //execute l'appel
-    List<ToDo> getAll();
+@FeignClient(name = "UserClient")
+public interface IGradeClient {
     @RequestLine("GET /{id}")
-    ToDo getOneById(@Param("id") Long id);
+    Grade getOneById(@Param("id") Long id);
+    @RequestLine("GET /")
+    List<Grade> getAll();
     @RequestLine("POST /")
     @Headers("Content-Type: application/json")
-    ToDo create(ToDo todo);
+    Grade create(Grade grade);
     @RequestLine("DELETE /{id}")
     void drop(@Param("id") Long id);
     @RequestLine("PATCH /{id}")
     @Headers("Content-Type: application/json")
-    ToDo update(ToDo todo, @Param("id") Long id);
+    Grade update(Grade grade, @Param("id") Long id);
 }

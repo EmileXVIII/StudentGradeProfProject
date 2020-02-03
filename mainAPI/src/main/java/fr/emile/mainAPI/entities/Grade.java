@@ -1,4 +1,4 @@
-package fr.emile.compositeTeacherGrade.entities;
+package fr.emile.mainAPI.entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +8,6 @@ import lombok.Setter;
 public class Grade {
     private Long id;
     private String title;
-    private String teacherId;
+    private String headTeacher;
     private Long year;
 }

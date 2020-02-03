@@ -1,4 +1,4 @@
-package fr.emile.jsonplaceholderUsertodos.clients;
+package fr.emile.mainAPI.clients;
 
 import feign.Logger;
 import feign.slf4j.Slf4jLogger;

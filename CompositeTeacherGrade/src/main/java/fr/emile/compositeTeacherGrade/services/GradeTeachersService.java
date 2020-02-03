@@ -52,7 +52,7 @@ public class GradeTeachersService {
         }
         log.warn(grade.toString());
 
-        log.info("Call to the students client - getAll");
+        log.info("Call to the teacher client - getAll");
         List<Teacher> userGrades = iTeacherClient.getAll().stream()
                 .filter(s -> s.getGrade().equals(gradeId)).collect(Collectors.toList());
         return new GradeTeachersDTO(grade, userGrades);

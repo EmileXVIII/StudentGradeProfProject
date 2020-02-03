@@ -1,4 +1,4 @@
-package fr.emile.jsonplaceholderUsertodos.usertodos;
+package fr.emile.mainAPI.usertodos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
