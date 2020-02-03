@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05ba50e6-b9b2-4421-8cb5-e4beabb266c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../BDDs/scripts.dir/exporterTodo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../BDDs/scripts.dir/exporterTodo.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TodoCore.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoCore.eml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TodoCore.userlibraries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/TotosApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/controllers/roadsTodos/TodoControl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/entities/Todo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/entities/TodoJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/exeptions/NothingToDoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/exeptions/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/repositories/TodoRep.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/services/ConnectionBDD.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/fr/emile/todoCore/services/Services.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/TodoCore-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/appplication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TodoCore/fr/emile/todoCore/TodosAplication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/TotosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/controllers/roadsTodos/TodoControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/entities/Todo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/entities/TodoJson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/exeptions/NothingToDoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/exeptions/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/repositories/TodoRep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/services/ConnectionBDD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/emile/todoCore/services/Services.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/appplication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TestB32019" beforeDir="false" afterPath="$PROJECT_DIR$/../../TestB32019" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoAccessingDataWithMySQL/src/main/java/com/demoAccessingDataWithMySQL/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoAccessingDataWithMySQL/src/main/java/com/demoAccessingDataWithMySQL/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demoAccessingDataWithMySQL/src/main/java/com/demoAccessingDataWithMySQL/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demoAccessingDataWithMySQL/src/main/java/com/demoAccessingDataWithMySQL/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/UsertodosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/clients/ClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/clients/IClientTodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/clients/IClientUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/controllers/UserToDoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/entities/ToDo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/java/fr/emile/usertodos/services/UserToDosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../usertodos/src/test/java/fr/emile/usertodos/usertodos/UsertodosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zooV1/src/main/java/ZooApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zooV1/src/main/java/ZooApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zooV1/src/main/java/controllers/AnimallFoodCageController/Routes/Get.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zooV1/src/main/java/controllers/AnimallFoodCageController/Routes/Get.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zooV1/src/main/java/services/ConnectionBDD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zooV1/src/main/java/services/ConnectionBDD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zooV1/src/main/java/services/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zooV1/src/main/java/services/Services.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/ZooAplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/ZooAplication.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/controllers/AnimallFoodCageController/Routes/AnimalControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/controllers/AnimallFoodCageController/Routes/AnimalControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/repositories/AnimalRep.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../zoov2/src/main/java/fr/emile/zoo/repositories/AnimalRep.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StudentCore" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StudentCore" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="StudentCore" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XI1fD4BgPIDxtFgyMKnYJQjg3C" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StudentCore" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.TodoCore [build]">
+    <configuration name="TodoCore [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="StudentCore" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="StudentCore" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TotosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="TodoCore.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.emile.todoCore.TotosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.TodoCore [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05ba50e6-b9b2-4421-8cb5-e4beabb266c0" name="Default Changelist" comment="" />
+      <created>1580718895982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580718895982</updated>
+      <workItem from="1580718897141" duration="872000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
